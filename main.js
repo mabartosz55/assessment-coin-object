@@ -1,6 +1,5 @@
 // console.log("working")
 let bodyElement = document.querySelector("body")
-// let heads = document.getElementById("#Heads!").style.color = "magenta";
 
 let coin = {
     state: 0,
@@ -22,7 +21,6 @@ let coin = {
             return ("Tails! ")
 
         }
-        
     },
     toHTML: function () {
         let image = document.createElement('img');
@@ -33,7 +31,6 @@ let coin = {
         } else {
             image.src = "https://m.media-amazon.com/images/I/51NyMaKLydL._SL500_.jpg"
         }
-
     // Added this to make the coins smaller and easier to see.  Help from 3W Schools .
         if (image && image.style) {
             image.style.height = "90px";
@@ -41,7 +38,6 @@ let coin = {
         }
         return image;
     },
-
 };
 
 // With help from watching Pete with Andre
@@ -53,7 +49,6 @@ function display20Flips() {
         bodyElement.append(coin.toString())
     }
 }
-
 function display20Images() {
     for (let index = 1; index < 20; index = index + 1) {
         coin.flip()
